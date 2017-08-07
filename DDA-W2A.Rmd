@@ -1,0 +1,13 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(leaflet)
+```
+
+
+### August 7, 2017
+```{r}
+mymap <- leaflet()
+mymap <- addTiles(mymap)
+mymap <- addMarkers(mymap, lng = -79.0747, lat = 43.0799, popup = "Niagara Falls")
+mymap
+```
